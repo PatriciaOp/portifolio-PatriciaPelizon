@@ -20,10 +20,22 @@
        document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
    }
 
+
+   
 // Ativa o menu lateral em mobile
 const menuLateral = document.querySelector('.menu-lateral');
 const navMenu = document.getElementById('nav-menu');
 
+const navLinks = navMenu.querySelectorAll('a'); // Seleciona todos os links do menu
+
 menuLateral.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
+
+
+// Adiciona evento de clique para cada link do menu
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active'); // Remove a classe 'active'
+    });
+  });
