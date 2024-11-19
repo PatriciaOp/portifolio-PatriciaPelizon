@@ -367,7 +367,8 @@ section div button:hover {
 
 
 
-/* Mobile styles section projetos */
+/* Mobile styles section projetos   */
+
 @media (max-width: 768px) {
 
     .titulo-carrossel {
@@ -376,18 +377,25 @@ section div button:hover {
 
     #carouselExampleControls {
         top: 230%;
-        left: 20%;
+        left: 15%; 
 
+    }
+    .carousel-item{
+        height: 50vw;
     }
 
     .imagem-carrossel {
+        width: 100%;
         height: 50vw;
         padding: 20px;
+       
 
     }
 
-}
-
+}  
+      
+       
+      
 
 
 
